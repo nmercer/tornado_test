@@ -1,0 +1,19 @@
+<html>
+  <head>
+      <title>{{ title }}</title>
+   </head>
+  <body>
+    <form action="/" method="post">
+      <input type="text" name="message">
+      <input type="submit" value="Submit"></br>
+    </form>
+    <form action="/" method="post">
+      <input type="file" name="file" />
+      <input type="submit" value="Submit" />
+    </form>
+    </br> 
+    {% for x in lister %}
+      {{ x }}
+    {% end %}
+  </body>
+</html>
